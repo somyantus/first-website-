@@ -1,52 +1,156 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap" rel="stylesheet">
+
+    <link href="css/all.min.css" rel="stylesheet">
     <style>
-        body{
-            background-image: url("images/bl.jpg");
-            background-size: cover;
-            color: rgb(233, 213, 219);
-            text-shadow: 2px 3px #110101;
-            line-height: 80px;
-            text-decoration: underline;
-            text-transform:capitalize;
-            text-indent: 10px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size:100%;
-            font-style:italic;
-            font-weight:100 ;
+        .div{
+            
+            font-size: 50px;
+            color: rgb(199, 218, 238);
         }
-        .main{
-            background-color: hsla(192, 83%, 34%, 0.37);
-            border-radius: 5px;
-            width:550px;
-            min-height: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top:220px;
-            text-align: center;
-            padding: 50px;
-            box-sizing: border-box;
-            outline-style: double;
-            outline-color: black;
-            outline-width: 10px;
-          
+        .span1{
+            background-color: red;  
+            color: #000000;
+            margin-left: 800px;
+            display: inline-block;
+            width: 40px;
         }
-        .profile-pic {
-             
-            height: 200px;
-            width: 150px;
-            padding: 0px;
-            outline-style:double;
-            outline-color: #071e29;
-            outline-width: 10px;
+        .span2{
+            background-color: yellow;
+            color: #000000;
+            margin-left: 800px;
+            display: inline-block;
+            width: 40px;
         }
+        .span3{
+            background-color: green;
+            color: #000000;
+            margin-left: 800px;
+            display: inline-block;
+            width: 40px;
+        }
+    body {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    
+    .background {
+        background-image: url("images/bulb.jpg");
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .background::after {
+        position: absolute;
+        height: 100%;
+        content: "";
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-image: -webkit-radial-gradient(circle, #424040,#000000);
+        opacity: 0.5;
+    }
+    
+    .name {
+        color: rgb(199, 218, 238);
+        text-transform: capitalize;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1em;
+        position: relative;
+        font-weight: 300;
+    }
+    
+    .main {
+        background-color: rgba(143, 133, 133, 0.253);
+        border-radius: 5px;
+        width: 550px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 220px; */
+        text-align: center;
+        padding: 50px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 20px 1px rgba(29, 16, 16, 0.877);
+        margin-top: 30px;
+    }
+    
+    .profile-pic {
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+    }
+    
+    .name::after {
+        height: 2px;
+        margin-left: auto;
+        width: 60%;
+        margin-right: auto;
+        background-color: rgb(0, 0, 0);
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+    }
+    
+    .xyz{
+        padding: 20px;
+        font-size: 2em;
+        color: #a71563;
+        margin-right: 30px;
+    }
+    .xyz2{
+        font-size: 2em;
+        color: #1d32a8;
+    }
     </style>
+</head>
 <body>
+   <div class="div">
+       <span class="span1">
+           A
+       </span>
+       <span>
+           ALWAYS
+       </span>
+   </div>
+   <div class="div">
+       <span class="span2">
+           S
+       </span>
+       <span>
+            SEEK
+       </span>
+   </div>
+   <div class="div">
+       <span class="span3">
+           K
+       </span>
+       <span>
+           Knowledge
+       </span>
+   </div>
+    <div class="background"></div>
     <div class="main">
-        <img src="images/snap.jpg" class="profile-pic" />
-        <h1>Somya Agarwal</h1>
+        <img src="images/t.jpg" class="profile-pic" />
+        <div class="name">
+            <h1>Somya Agarwal</h1>
+        </div>
+        <a href="https://www.instagram.com/somya_agarwal_2825/"><i class="fab fa-instagram xyz"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f xyz2"></i></a>
+        <!-- <div class="line"></div> -->
     </div>
 </body>
-</head>
+
 </html>
