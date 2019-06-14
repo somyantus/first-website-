@@ -2,155 +2,149 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <style>
-        .div{
-            
-            font-size: 50px;
-            color: rgb(199, 218, 238);
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
         }
-        .span1{
-            background-color: red;  
-            color: #000000;
-            margin-left: 800px;
+
+        .background {
+            background-image: url("images/t.jpg");
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .background::after {
+            position: absolute;
+            height: 100%;
+            content: "";
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.274));
+            opacity: 0.8;
+        }
+
+        .name {
+            color: rgb(0, 0, 0);
+            text-transform: capitalize;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1em;
+            position: relative;
+            font-weight: 300;
+            margin-top: 70px;
+        }
+
+        .main {
+            background-image: url("images/simple-pattern.png");
+            border-radius: 5px;
+            width: 550px;
+            height: 800px;
+            text-align: center;
+            padding: 60px;
+            box-shadow: 0px 0px 20px 5px rgba(29, 16, 16, 0.877);
+            box-sizing: border-box;
+            margin-top: 50px;
+            margin-left: 150px;
+            background-image: linear-gradient(to bottom,#000000,#ffffffaf);
+
+        }
+        .profile-pic {
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+        }
+
+        .name::after {
+            height: 2px;
+            margin-left: auto;
+            width: 60%;
+            margin-right: auto;
+            background-color: rgb(0, 0, 0);
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+        }
+
+        .xyz {
+            padding: 20px;
+            font-size: 2em;
+            color: darkmagenta;
+            margin-right: 30px;
+        }
+
+        .xyz2 {
+            font-size: 2em;
+            color: rgb(7, 7, 102);
+            margin-right: 40px;
+        }
+
+        .xyz3 {
+            font-size: 2em;
+            color: yellow;
+        }
+
+        .heading {
+            font-size: 150px;
+            color: rgb(0, 0, 0);
+            margin-left: 50px;
+            text-shadow: 0 0 6px #dfdada, 0 0 8px #242121;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .main-app {
+            height: 100%;
+            width: 100%;
+        }
+        .left, .right {
+            width: 50%;
+            float: left;
             display: inline-block;
-            width: 40px;
+        } .rotation{
+            font-size: 100px;
+            font-weight: 800;
+            margin-left: 50px;
         }
-        .span2{
-            background-color: yellow;
-            color: #000000;
-            margin-left: 800px;
-            display: inline-block;
-            width: 40px;
-        }
-        .span3{
-            background-color: green;
-            color: #000000;
-            margin-left: 800px;
-            display: inline-block;
-            width: 40px;
-        }
-    body {
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-    
-    .background {
-        background-image: url("images/bulb.jpg");
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-    
-    .background::after {
-        position: absolute;
-        height: 100%;
-        content: "";
-        width: 100%;
-        left: 0;
-        top: 0;
-        background-image: -webkit-radial-gradient(circle, #424040,#000000);
-        opacity: 0.5;
-    }
-    
-    .name {
-        color: rgb(199, 218, 238);
-        text-transform: capitalize;
-        font-family: 'Libre Baskerville', serif;
-        font-size: 1em;
-        position: relative;
-        font-weight: 300;
-    }
-    
-    .main {
-        background-color: rgba(143, 133, 133, 0.253);
-        border-radius: 5px;
-        width: 550px;
-        height: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        /* margin-top: 220px; */
-        text-align: center;
-        padding: 50px;
-        box-sizing: border-box;
-        box-shadow: 0px 0px 20px 5px rgba(29, 16, 16, 0.877);
-        margin-top: 30px;
-    }
-    
-    .profile-pic {
-        border-radius: 50%;
-        height: 180px;
-        width: 180px;
-    }
-    
-    .name::after {
-        height: 2px;
-        margin-left: auto;
-        width: 60%;
-        margin-right: auto;
-        background-color: rgb(0, 0, 0);
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -20px;
-    }
-    
-    .xyz{
-        padding: 20px;
-        font-size: 2em;
-        color: #a71563;
-        margin-right: 30px;
-    }
-    .xyz2{
-        font-size: 2em;
-        color: #1d32a8;
-    }
+       
     </style>
 </head>
+
 <body>
-   <div class="div">
-       <span class="span1">
-           A
-       </span>
-       <span>
-           ALWAYS
-       </span>
-   </div>
-   <div class="div">
-       <span class="span2">
-           S
-       </span>
-       <span>
-            SEEK
-       </span>
-   </div>
-   <div class="div">
-       <span class="span3">
-           K
-       </span>
-       <span>
-           Knowledge
-       </span>
-   </div>
     <div class="background"></div>
-    <div class="main">
-        <img src="images/t.jpg" class="profile-pic" />
-        <div class="name">
-            <h1>Somya Agarwal</h1>
+    <div class="main-app">
+            <div class="left">
+                <div class="heading">EAT</div>
+                <div class="heading">SLEEP</div>
+                <div class="heading">CODE</div>
+                <p class="rotation">Coder is the New Black</p>
+            </div>
+            <div class="right">
+                <div class="main">
+                    <img src="images/hacker.png" class="profile-pic" />
+                    <div class="name">
+                        <h1>Somya Agarwal</h1>
+                    </div>
+                    <a href="https://www.instagram.com/somya_agarwal_2825/"><i class="fab fa-instagram xyz"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f xyz2"></i></a>
+                    <a
+                        href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i
+                            class="fab fa-snapchat-ghost xyz3"></i></a>
+                </div>
+            </div>
         </div>
-        <a href="https://www.instagram.com/somya_agarwal_2825/"><i class="fab fa-instagram xyz"></i></a>
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f xyz2"></i></a>
-        <!-- <div class="line"></div> -->
-    </div>
+
+
+
 </body>
 
 </html>
